@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sales Invoices</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app2.js" defer></script>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h1>Inventory Manager</h1>
+    <a href="sales_ui.html"><button><div class="menu-item">Sales</div></button></a>
+  </div>
+
+  <div class="main">
+    <div class="page-header">
+      <div class="pad-header">
+        <h2>Sales Invoices</h2>
+      </div>
+    </div>
+
+    <div id="salesinvoiceContainer" style="overflow-x:auto;"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof fetchAndDisplayData === 'function') {
+        fetchAndDisplayData("http://localhost:5000/get_all_sales_today", "#salesinvoiceContainer", {
+          title: "Sales Invoices",
+          showFilters: false,
+          columnOrder: [" invoiceid", "customerid", "employeeid", "invoicedate", "totalamount", "discountapplied", "reorderlevel", "taxamount", "paymentmode"],
+          formatters: {
+            // Custom formatters if needed
+            // expirydate: (value) => {
+            //   // Custom date formatting example
+            //   return new Date(value).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+            // }
+          }
+        });
+      } else {
+        console.error("Error: fetchAndDisplayData function not found");
+      }
+    });
+  </script>
+</body>
+</html>

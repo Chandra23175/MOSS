@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Product</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h1>Inventory Manager</h1>
+    <div class="menu-item active">Update Product</div>
+    <a href = "dashboard_ui.html"><button><div class="menu-item">Dashboard</div></button></a>
+  </div>
+
+  <div class="main">
+    <div class="page-header">
+      <div class="pad-header">
+        <h2>Update Product</h2>
+      </div>
+    </div>
+
+    <!-- Form Wrapper for Centering -->
+    <div class="form-wrapper">
+      <div class="form-container">
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="productID">Product ID</label>
+                <input type="number" id="productID" name="productID" required>
+            </div>
+
+          <div class="form-group">
+            <label for="productName">Product Name</label>
+            <input type="text" id="productName" name="productName" required>
+          </div>
+
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+              <option value="">--Select Category--</option>
+              <option>Electronics</option>
+              <option>Clothing</option>
+              <option>Stationery</option>
+              <option>Groceries</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Stock Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="price">Unit Price</label>
+            <input type="number" id="price" name="price" step="0.01" required>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description (optional)</label>
+            <textarea id="description" name="description" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="reorder">Re-Order Level</label>
+            <input type="number" id="reorder" name="reorderlevel" min="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="SupplierID">Supplier ID</label>
+            <input type="number" id="reorder" name="SupplierID" min="0" required>
+          </div>
+
+          <div class="form-group">
+            <label for="CategoryID">Category ID</label>
+            <input type="number" id="CategoryID" name="CategoryID" min='0' required>
+          </div>
+
+          <button type="submit" class="submit-btn">Update Product</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Customer Details</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h1>Inventory Manager</h1>
+    <div class="menu-item active">Update Customer Details</div>
+    <a href = "customer_ui.html"><button><div class="menu-item">Customers</div></button></a>
+  </div>
+
+  <div class="main">
+    <div class="page-header">
+      <div class="pad-header">
+        <h2>Update Customer Details</h2>
+      </div>
+    </div>
+
+    <!-- Form Wrapper for Centering -->
+    <div class="form-wrapper">
+      <div class="form-container">
+        <form action="#" method="POST">
+
+           <div class="form-group">
+                <label for="customerID">Customer ID</label>
+                <input type="number" id="customerID" name="customerID" min="1" required>
+            </div>
+
+          <div class="form-group">
+            <label for="empName">Customer Name</label>
+            <input type="text" id="customerName" name="customerName" required>
+          </div>
+
+          <div class="form-group">
+            <label for="customerEmail">Email(optional)</label>
+            <input type="text" id="cusEmail" name="cusEmail">
+          </div>
+
+          <div class="form-group">
+            <label for="cusNumber">Contact Number</label>
+            <input type="number" id="cusNumber" name="cusNumber" min="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cusAddress">Address</label>
+            <textarea id="cusAddress" name="cusAddress" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="membership">Membership Status</label>
+            <select id="membership" name="membership" required>
+              <option value="">--Select Membership Status--</option>
+              <option>Basic</option>
+              <option>Silver</option>
+              <option>Gold</option>
+              <option>Platinum</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="loyalityPoints">Loyality Points</label>
+            <input type="number" id="loyalityPoints" name="loyalityPoints" min="0" required>
+          </div>
+
+        
+          <button type="submit" class="submit-btn">Update Customer Details</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

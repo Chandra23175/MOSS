@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delete Customer Details</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h1>Inventory Manager</h1>
+    <div class="menu-item active">Delete Customer Details</div>
+    <a href = "customer_ui.html"><button><div class="menu-item">Customers</div></button></a>
+  </div>
+
+  <div class="main">
+    <div class="page-header">
+      <div class="pad-header">
+        <h2>Delete Customer Details</h2>
+      </div>
+    </div>
+
+    <!-- Form Wrapper for Centering -->
+    <div class="form-wrapper">
+      <div class="form-container">
+        <form action="#" method="POST">
+
+           <div class="form-group">
+                <label for="customerID">Customer ID</label>
+                <input type="number" id="customerID" name="customerID" min="1" required>
+            </div>
+
+          <button type="submit" class="submit-btn">Delete Customer Details</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

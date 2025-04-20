@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Purchase Detail</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h1>Inventory Manager</h1>
+    <div class="menu-item active">Add Purchase Detail</div>
+    <a href = "purchase_ui.html"><button><div class="menu-item">Purchase</div></button></a>
+  </div>
+
+  <div class="main">
+    <div class="page-header">
+      <div class="pad-header">
+        <h2>Add Purchase</h2>
+      </div>
+    </div>
+
+    <!-- Form Wrapper for Centering -->
+    <div class="form-wrapper">
+      <div class="form-container">
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="productID">Product ID</label>
+            <input type="number" id="productID" name="productID" required>
+          </div>
+
+          <div class="form-group">
+            <label for="supplierID">Supplier ID</label>
+            <input type="number" id="supplierID" name="supplierID" min="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="orderDate">Order Date</label>
+            <input type="date" id="orderDate" name="orderDate" required>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="price">Price Per Unit</label>
+            <input type="number" id="priceunit" name="priceunit" step="0.01" required>
+          </div>
+
+          <div class="form-group">
+            <label for="totalamount">Total Amout</label>
+            <input type="number" id="totalamount" name="totalamount" step="0.01" required>
+          </div>
+
+          <div class="form-group">
+            <label for="category">Status</label>
+            <select id="status" name="status" required>
+              <option value="">--Select Status--</option>
+              <option>Pending</option>
+              <option>Shipped</option>
+              <option>Cancelled</option>
+              <option>Delivered</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-btn">Add Purchase Detail</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

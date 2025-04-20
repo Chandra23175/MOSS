@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment & Finance</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h1>Store & Inventory<br>Management<br></h1>
+    <a href = "dashboard_ui.html"><button><div class="menu-item">Dashboard</div></button><br></a>
+    <a href ="inventory_ui.html"><button><div class="menu-item">Inventory</div></button><br></a>
+    <a href ="purchase_ui.html"><button><div class="menu-item">Purchase</div></button><br></a>
+    <a href = "sales_ui.html"><button><div class="menu-item">Sales</div></button><br></a>
+    <a href="employee_ui.html"><button><div class="menu-item">Employees</div></button><br></a>
+    <a href="customer_ui.html"><button><div class="menu-item">Customers</div></button><br></a>
+    <button><div class="menu-item active">Payment and Finance</div></button><br>
+    <a href="feedback&complaints.html"><button><div class="menu-item ">FeedBack and Complaints</div></button><br></a>
+    <div class="user-info">
+      <img src="https://via.placeholder.com/40" alt="user">
+      <div>
+        <div class="name">MOSS</div>
+        <div>Project Manager</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="page-header">
+      <h2>Payment & Finance Options</h2>
+      <div class="header-actions">
+        <input type="text" placeholder="Search">
+        <select>
+          <option>Sort by</option>
+          <option>Newest</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="option-grid">
+        <div class="option-card">
+          <img src="https://via.placeholder.com/100" alt="Payment & Finance">
+          <div class="option-info">
+            <div class="option-name">Add Store Expense Details</div>
+            <a href="payment_add_expense.html"><button><div class="add-btn">Add</div></button></a>
+          </div>
+        </div>
+
+        <div class="option-card">
+            <img src="https://via.placeholder.com/100" alt="Payment & Finance">
+            <div class="option-info">
+                <div class="option-name">Update Store Expense Detail</div>
+                <a href="payment_update_expense.html"><button><div class="add-btn">Update</div></button></a>
+           </div>
+        </div>
+
+        <div class="option-card">
+            <img src="https://via.placeholder.com/100" alt="Payment & Finance">
+            <div class="option-info">
+              <div class="option-name">Remove Store Expense Detail</div>
+              <a href="payment_remove_expense.html"><button><div class="add-btn">Remove</div></button></a>
+            </div>
+        </div>
+
+        <div class="option-card">
+            <img src="https://via.placeholder.com/100" alt="Payment & Finance">
+            <div class="option-info">
+              <div class="option-name">View Total Revenue Generated Last Month</div>
+              <a href = 'payment_revenue_month.html'><button><div class="add-btn">View Revenue</div></button></a>
+            </div>
+        </div>
+
+        <div class="option-card">
+            <img src="https://via.placeholder.com/100" alt="Payment & Finance">
+            <div class="option-info">
+              <div class="option-name">View Total Expenditure on Inventory last month</div>
+              <a href = 'payment_inventory_last_month.html'><button><div class="add-btn">View Total Expenditure</div></button></a>
+            </div>
+        </div>
+        
+        <div class="option-card">
+            <img src="https://via.placeholder.com/100" alt="Payment & Finance">
+            <div class="option-info">
+              <div class="option-name">View Purchases with Highest Expenditure</div>
+              <a href = 'payments_highest_purchase.html'><button><div class="add-btn">View Payment & Finances</div></button></a>
+            </div>
+        </div>
+
+        <div class="option-card">
+            <img src="https://via.placeholder.com/100" alt="Payment & Finance">
+            <div class="option-info">
+              <div class="option-name">View Transaction Log</div>
+              <a href = 'payments_transactionlog.html'><button><div class="add-btn">View Log</div></button></a>
+            </div>
+        </div>
+        
+    </div>
+  </div>
+</body>
+</html>

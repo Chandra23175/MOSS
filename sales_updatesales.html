@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Sales Detail</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h1>Inventory Manager</h1>
+    <div class="menu-item active">Update Sales Detail</div>
+    <a href = "sales_ui.html"><button><div class="menu-item">Sales</div></button></a>
+  </div>
+
+  <div class="main">
+    <div class="page-header">
+      <div class="pad-header">
+        <h2>Update Sales Details</h2>
+      </div>
+    </div>
+
+    <!-- Form Wrapper for Centering -->
+    <div class="form-wrapper">
+      <div class="form-container">
+        <form action="#" method="POST">
+
+           <div class="form-group">
+                <label for="salesID">Sales Order ID</label>
+                <input type="numer" id="salesID" name="salesID" min='1' required>
+            </div>
+      
+          <div class="form-group">
+            <label for="customerid">Customer ID</label>
+            <input type="numer" id="customerID" name="customerID" min="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="employeeid">Employee ID</label>
+            <input type="number" id="employeeid" name="employeeid" min="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="totalamount">Total Amount</label>
+            <input type="number" id="totalamount" name="totalamount" min="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="discountamount">Discount Applied</label>
+            <input type="number" id="discountamount" name="discountamount" min="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="taxamount">Tax Applied</label>
+            <input type="number" id="taxamount" name="taxamount" min="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="payment">Payment Option</label>
+            <select id="paymentMode" name="paymentMode" required>
+              <option value="">--Select Payment Option--</option>
+              <option>Cash</option>
+              <option>Credit Card</option>
+              <option>Debit Card</option>
+              <option>UPI</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-btn">Update Sales Detail</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

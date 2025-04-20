@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amount Spent on Inventory Purchases Last Month</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app2.js" defer></script>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h1>Inventory Manager</h1>
+    <a href="payment_ui.html"><button><div class="menu-item">Payment and Finance</div></button></a>
+  </div>
+
+  <div class="main">
+    <div class="page-header">
+      <div class="pad-header">
+        <h2>Amount Spent on Inventory Purchases Last Month</h2>
+      </div>
+    </div>
+
+    <div id="inventoryspendmonth" style="overflow-x:auto;"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof fetchAndDisplayData === 'function') {
+        fetchAndDisplayData("http://localhost:5000/inventory_spend_month", "#inventoryspendmonth", {
+          title: "Amount Spent on Inventory Purchases Last Month",
+          showFilters: false,
+          columnOrder: ["sum"],
+          formatters: {
+            // Custom formatters if needed
+            // expirydate: (value) => {
+            //   // Custom date formatting example
+            //   return new Date(value).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+            // }
+          }
+        });
+      } else {
+        console.error("Error: fetchAndDisplayData function not found");
+      }
+    });
+  </script>
+</body>
+</html>

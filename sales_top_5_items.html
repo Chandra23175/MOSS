@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top 5 Selling Products</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app2.js" defer></script>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h1>Inventory Manager</h1>
+    <a href="sales_ui.html"><button><div class="menu-item">Sales</div></button></a>
+  </div>
+
+  <div class="main">
+    <div class="page-header">
+      <div class="pad-header">
+        <h2>Top 5 Selling Products</h2>
+      </div>
+    </div>
+
+    <div id="product5highestsalesweek" style="overflow-x:auto;"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof fetchAndDisplayData === 'function') {
+        fetchAndDisplayData("http://localhost:5000/product_highest_sales_5", "#product5highestsalesweek", {
+          title: "Top 5 Best-Selling Products",
+          showFilters: false,
+          columnOrder: ["id", "name", "category", "sid", "sum"],
+          formatters: {
+            // Custom formatters if needed
+            // expirydate: (value) => {
+            //   // Custom date formatting example
+            //   return new Date(value).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+            // }
+          }
+        });
+      } else {
+        console.error("Error: fetchAndDisplayData function not found");
+      }
+    });
+  </script>
+</body>
+</html>

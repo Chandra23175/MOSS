@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h1>Store & Inventory<br>Management<br></h1>
+    <a href = "dashboard_ui.html"><button><div class="menu-item">Dashboard</div></button><br></a>
+    <a href ="inventory_ui.html"><button><div class="menu-item">Inventory</div></button><br></a>
+    <button><div class="menu-item active">Purchase</div></button><br>
+    <a href = "sales_ui.html"><button><div class="menu-item">Sales</div></button><br></a>
+    <a href="employee_ui.html"><button><div class="menu-item">Employees</div></button><br></a>
+    <a href="customer_ui.html"><button><div class="menu-item">Customers</div></button><br></a>
+    <a href="payment_ui.html"><button><div class="menu-item">Payment and Finance</div></button><br></a>
+    <a href="feedback&complaints.html"><button><div class="menu-item ">FeedBack and Complaints</div></button><br></a>
+    <div class="user-info">
+      <img src="https://via.placeholder.com/40" alt="user">
+      <div>
+        <div class="name">MOSS</div>
+        <div>Project Manager</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="page-header">
+      <h2>Purchase Options</h2>
+      <div class="header-actions">
+        <input type="text" placeholder="Search">
+        <select>
+          <option>Sort by</option>
+          <option>Newest</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="option-grid">
+        <div class="option-card">
+          <img src="https://via.placeholder.com/100" alt="Purchase">
+          <div class="option-info">
+            <div class="option-name">Add Purchase Detail</div>
+            <a href = "purchase_new_detail.html"><button><div class="add-btn">Add</div></button></a>
+          </div>
+        </div>
+
+        <div class="option-card">
+            <img src="https://via.placeholder.com/100" alt="Purchase">
+            <div class="option-info">
+                <div class="option-name">Update Purchase Detail</div>
+                <a href="purchase_update_detail.html"><button><div class="add-btn">Update</div></button></a>
+           </div>
+        </div>
+
+        <div class="option-card">
+            <img src="https://via.placeholder.com/100" alt="Purchase">
+            <div class="option-info">
+              <div class="option-name">View All Purchase Details</div>
+              <button><div class="add-btn">View All</div></button>
+            </div>
+        </div>
+
+        <div class="option-card">
+          <img src="https://via.placeholder.com/100" alt="Purchase">
+          <div class="option-info">
+            <div class="option-name">Add Vendor Details</div>
+            <a href = "purchase_new_Vendor.html"><button><div class="add-btn">Add</div></button></a>
+          </div>
+        </div>
+
+        <div class="option-card">
+            <img src="https://via.placeholder.com/100" alt="Purchase">
+            <div class="option-info">
+                <div class="option-name">Update Vendor Details</div>
+                <a href="purchase_vendor_update.html"><button><div class="add-btn">Update</div></button></a>
+           </div>
+        </div>
+
+        <div class="option-card">
+          <img src="https://via.placeholder.com/100" alt="Purchase">
+          <div class="option-info">
+            <div class="option-name">Remove Vendor Details</div>
+            <a href = "purchase_remove_vendor.html"><button><div class="add-btn">Remove</div></button></a>
+          </div>
+        </div>
+
+        <div class="option-card">
+            <img src="https://via.placeholder.com/100" alt="Purchase">
+            <div class="option-info">
+              <div class="option-name">View All Vendors</div>
+              <a href = 'purchase_vendors.html'><button><div class="add-btn">View Vendors</div></button></a>
+            </div>
+        </div>
+
+        <div class="option-card">
+          <img src="https://via.placeholder.com/100" alt="Purchase">
+          <div class="option-info">
+            <div class="option-name">View Purchases from Vendors</div>
+            <button><div class="add-btn">View</div></button>
+          </div>
+      </div>
+
+      <div class="option-card">
+        <img src="https://via.placeholder.com/100" alt="Purchase">
+        <div class="option-info">
+          <div class="option-name">View All Purchases from a Vendor</div>
+          <button><div class="add-btn">Select</div></button>
+        </div>
+    </div>
+
+    <div class="option-card">
+      <img src="https://via.placeholder.com/100" alt="Purchase">
+      <div class="option-info">
+        <div class="option-name">View Top 3 Vendors with most unique products</div>
+        <a href = 'purchase_unique_vendors.html'><button><div class="add-btn">Select</div></button></a>
+      </div>
+  </div>
+
+        
+
+
+      <!-- Duplicate the product-card div for more products -->
+    </div>
+  </div>
+</body>
+</html>

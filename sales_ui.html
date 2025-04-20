@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h1>Store & Inventory<br>Management<br></h1>
+    <a href = "dashboard_ui.html"><button><div class="menu-item">Dashboard</div></button><br></a>
+    <a href ="inventory_ui.html"><button><div class="menu-item">Inventory</div></button><br></a>
+    <a href ="purchase_ui.html"><button><div class="menu-item">Purchase</div></button><br></a>
+    <button><div class="menu-item active">Sales</div></button><br>
+    <a href="employee_ui.html"><button><div class="menu-item">Employees</div></button><br></a>
+    <a href="customer_ui.html"><button><div class="menu-item">Customers</div></button><br></a>
+    <a href="payment_ui.html"><button><div class="menu-item">Payment and Finance</div></button><br></a>
+    <a href="feedback&complaints.html"><button><div class="menu-item ">FeedBack and Complaints</div></button><br></a>
+    <div class="user-info">
+      <img src="https://via.placeholder.com/40" alt="user">
+      <div>
+        <div class="name">MOSS</div>
+        <div>Project Manager</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="page-header">
+      <h2>Sales Options</h2>
+      <div class="header-actions">
+        <input type="text" placeholder="Search">
+        <select>
+          <option>Sort by</option>
+          <option>Newest</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="option-grid">
+        <div class="option-card">
+          <img src="https://via.placeholder.com/100" alt="Sales">
+          <div class="option-info">
+            <div class="option-name">Add Sales Detail</div>
+            <a href ="sales_newsales.html"><button><div class="add-btn">Add</div></button></a>
+          </div>
+        </div>
+
+        <div class="option-card">
+            <img src="https://via.placeholder.com/100" alt="Sales">
+            <div class="option-info">
+                <div class="option-name">Update Sales Detail</div>
+                <a href="sales_updatesales.html"><button><div class="add-btn">Update</div></button></a>
+           </div>
+        </div>
+
+        <div class="option-card">
+            <img src="https://via.placeholder.com/100" alt="Sales">
+            <div class="option-info">
+              <div class="option-name">View All Sale's Details</div>
+              <a href = 'sales_alldata.html'><button><div class="add-btn">View All</div></button></a>
+            </div>
+        </div>
+
+        <div class="option-card">
+            <img src="https://via.placeholder.com/100" alt="Sales">
+            <div class="option-info">
+              <div class="option-name">View Today's Sales</div>
+              <a href = 'sales_view_todays_sale.html'><button><div class="add-btn">View Sales</div></button></a>
+            </div>
+        </div>
+
+        <div class="option-card">
+            <img src="https://via.placeholder.com/100" alt="Sales">
+            <div class="option-info">
+              <div class="option-name">View All Sales by Employee</div>
+              <button><div class="add-btn">View Sales</div></button>
+            </div>
+        </div>
+
+        <div class="option-card">
+          <img src="https://via.placeholder.com/100" alt="Sales">
+          <div class="option-info">
+            <div class="option-name">View Customer Invoices</div>
+            <button><div class="add-btn">View Invoices</div></button>
+          </div>
+      </div>
+
+      <div class="option-card">
+        <img src="https://via.placeholder.com/100" alt="Sales">
+        <div class="option-info">
+          <div class="option-name">View Item With Highest Sales this Week</div>
+          <a href="sales_highest_week.html"><button><div class="add-btn">View Product</div></button></a>
+        </div>
+    </div>
+
+    <div class="option-card">
+        <img src="https://via.placeholder.com/100" alt="Sales">
+        <div class="option-info">
+          <div class="option-name">View Top 5 Selling Items</div>
+          <a href="sales_top_5_items.html"><button><div class="add-btn">View Product</div></button></a>
+        </div>
+    </div>
+
+    <div class="option-card">
+        <img src="https://via.placeholder.com/100" alt="Sales">
+        <div class="option-info">
+          <div class="option-name">View Returns</div>
+          <a href="sales_return.html"><button><div class="add-btn">View</div></button></a>
+        </div>
+    </div>
+
+
+        
+
+      <!-- Duplicate the product-card div for more products -->
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>In-Stock Products</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app2.js" defer></script>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h1>Inventory Manager</h1>
+    <a href="dashboard_ui.html"><button><div class="menu-item">Dashboard</div></button></a>
+  </div>
+
+  <div class="main">
+    <div class="page-header">
+      <div class="pad-header">
+        <h2>In-Stock Products</h2>
+      </div>
+    </div>
+
+    <div id="productTableContainer" style="overflow-x:auto;"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof fetchAndDisplayData === 'function') {
+        fetchAndDisplayData("http://localhost:5000/get_instock_products", "#productTableContainer", {
+          title: "Product Inventory",
+          addButtonText: "Add New Product",
+          addButtonUrl: "add_product.html",
+          showFilters: false,
+          columnOrder: ["productid", "name", "description", "price", "stockquantity", "expirydate", "reorderlevel", "categoryid", "supplierid"],
+          formatters: {
+            // Custom formatters if needed
+            // expirydate: (value) => {
+            //   // Custom date formatting example
+            //   return new Date(value).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+            // }
+          }
+        });
+      } else {
+        console.error("Error: fetchAndDisplayData function not found");
+      }
+    });
+  </script>
+</body>
+</html>
